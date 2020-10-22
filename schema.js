@@ -20,33 +20,7 @@ const ListType = new GraphQLObjectType({
   })
 })
 
-// const BookType = new GraphQLObjectType({
-//   name: 'Book',
-//   fields: ()=>({
-//     title: { type: GraphQLString },
-//     description:{type:GraphQLString},
-//     imageLinks: { type: ImageType},
-//     publisher:{type: GraphQLString}
-//   })
-// })
-//
-// const ImageType = new GraphQLObjectType({
-//   name: 'Image',
-//   fields:()=>({
-//     thumbnail: { type: GraphQLString }
-//   })
-// })
 
-const BestSellerType = new GraphQLObjectType({
-  name: 'BestSeller',
-  fields:()=>({
-    rank: { type: GraphQLInt },
-    author:{type: GraphQLString},
-    description: { type:GraphQLString },
-    title: { type: GraphQLString },
-    book_image:{type:GraphQLString}
-  })
-})
 
 
 const RootQuery = new GraphQLObjectType({
@@ -58,7 +32,6 @@ const RootQuery = new GraphQLObjectType({
         subtype: { type: GraphQLString }
       },
       resolve(parent,args){
-        console.log(`https://api.jikan.moe/v3/top/anime/1/${args.subtype}`);
         return axios
                .get(`https://api.jikan.moe/v3/top/anime/1/${args.subtype}`)
                .then( res => res.data.top)
@@ -71,7 +44,6 @@ const RootQuery = new GraphQLObjectType({
        genreId: { type: GraphQLString }
       },
       resolve(parent,args){
-        console.log(`https://api.jikan.moe/v3/genre/anime/2/${args.genreId}`);
         return axios
                .get(`https://api.jikan.moe/v3/genre/anime/2/${args.genreId}`)
                .then( res => res.data.anime)
@@ -84,7 +56,6 @@ const RootQuery = new GraphQLObjectType({
        day: { type: GraphQLString }
       },
       resolve(parent,args){
-        console.log(`https://api.jikan.moe/v3/schedule/${args.day}`);
         return axios
                .get(`https://api.jikan.moe/v3/schedule/${args.day}`)
                .then( res => res.data[args.day])
@@ -101,8 +72,6 @@ const RootQuery = new GraphQLObjectType({
        animeId: { type: GraphQLString }
       },
       resolve(parent,args){
-        console.log(' anime args:',args);
-        console.log(`https://api.jikan.moe/v3/anime/${args.animeId}`);
         return axios
                .get(`https://api.jikan.moe/v3/anime/${args.animeId}`)
                .then( res =>{console.log([res]);return res.data})

@@ -9,14 +9,15 @@ const axios = require('axios');
 
 
 const ListType = new GraphQLObjectType({
-  name:'top',
+  name:'tops',
   fields: ()=>({
     mal_id: { type:GraphQLString},
     rank:{type: GraphQLInt},
     title: {type:GraphQLString},
     image_url:{type: GraphQLString},
     url:{type:GraphQLString},
-    trailer_url:{type: GraphQLString}
+    trailer_url:{type: GraphQLString},
+    synopsis:{type: GraphQLString}
   })
 })
 

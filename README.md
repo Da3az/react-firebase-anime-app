@@ -7,6 +7,7 @@ anime app build with REACT and FIREBASE and using Graphql and redux.
 
 You can get and view the list of all products from the API, register, add animes to watchlist, remove specific animes .
 
+Live demo on https://react-anime-app.herokuapp.com/
 
 ## Technologies & Tools
 

@@ -1,4 +1,4 @@
-./client/node_modules
-./client/src/firebase.js
-./public
+/client/node_modules
+/client/src/firebase.js
+/public
 /node_modules

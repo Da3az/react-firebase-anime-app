@@ -3,9 +3,9 @@
 <img src="githubImg/anime-app.jpg"/>
 
 ## Description
-anime app build with REACT and FIREBASE and using Graphql and redux. 
+Anime app built with REACT and FIREBASE and using Graphql and redux. 
 
-You can get and view the list of all products from the API, register, add animes to watchlist, remove specific animes .
+You can get and view the list of all products from the API, register, add animes to watchlist and other functionalities .
 
 Live demo on https://react-anime-app.herokuapp.com/
 

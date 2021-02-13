@@ -1,0 +1,131 @@
+.banner{
+  width: 100%;
+  background-image: url("https://coverfiles.alphacoders.com/339/33959.png");
+  height: 500px;
+  background-size: cover;
+}
+
+/* .banner__image{
+  height: 500px
+}
+
+.banner__image img{
+  height: 100%;
+  width: 100%;
+
+} */
+
+.animeCard{
+  width: 250px;
+  height: 300px;
+  color: white;
+  background-color:#0A100D;
+  padding: 0px;
+  margin: auto;
+  margin-top: 15px;
+  position: relative;
+  transition: transform .2s ease-in;
+  cursor: pointer;
+}
+
+
+.animeCard:hover{
+  transform: scale(1.02);
+  transform-origin: center;
+}
+
+.animeCard img{
+  width: 250px;
+  height: 250px;
+}
+
+.animeCard p{
+  font-size: 15px;
+  padding: 5px 5px 5px 5px;
+}
+
+.card__rank {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: yellow;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  color: black
+}
+
+
+
+.genres .animeCard{
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: auto;
+  margin: 25px;
+}
+
+.genres .animeCard p{
+  font-size: 12px;
+}
+
+.card__info{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: yellow;
+}
+
+.trailer{
+  width: 100%;
+  height: 300px;
+  display:none;
+  position: relative;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 1
+}
+
+.trailer iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.trailer button{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  height: 30px;
+  width: 30px;
+}
+
+.trailer button span{
+  color: white;
+  font-size: 30px;
+  opacity: .5
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .banner{
+    height: 200px;
+    background-size: cover;
+  }
+  
+}

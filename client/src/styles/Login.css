@@ -1,0 +1,99 @@
+.login{
+  position: absolute;
+  height:450px;
+  width:300px;
+  top: 50px;
+  left: calc(50% - 175px);
+  z-index:99;
+  background-color:#553ebe;
+  padding: 30px;
+  padding-top: 10px;
+  overflow: hidden;
+  animation: comein 1s linear;
+  overflow: hidden !important;
+}
+
+
+
+@keyframes comein {
+  from{
+    opacity:0;
+    transform:translateY(50px)
+  }
+  to{
+    opacity:1;
+    transform:translateY(0px)
+  }
+}
+
+.login h1{
+margin-bottom: 30px;
+}
+
+.login .form {
+width: 90%;
+max-width: 360px;
+margin: auto;
+margin-top: 10px;
+text-align: center;
+font-family: 'Roboto';
+position: relative;
+}
+
+.login .form img{
+height: 150px;
+width: 100px;
+top: 180px;
+left: -60px;
+position: absolute
+}
+
+.login.form h1 {
+color: #00BCD4;
+}
+
+.login.form .btn {
+margin: 20px auto;
+}
+
+.login.form p {
+font-style: italic;
+}
+
+.login.form a {
+color: #00BCD4;
+cursor: pointer;
+}
+
+.login .form .input{
+margin:10px;
+}
+
+.login .form button{
+  margin:10px;
+  width:100px
+}
+
+.login .form p span{
+color: yellow;
+cursor: pointer;
+
+}
+
+@media (max-height: 700px) {
+.login{
+  height: 350px;
+  overflow: scroll;
+}
+}
+.MuiTextField-root{
+background-color:rgba(255, 255, 255, 0.04);
+}
+
+.MuiInput-underline:hover:not(.Mui-disabled)::before{
+border-color: white !important;
+}
+
+.Mui-focused{
+color:white !important
+}

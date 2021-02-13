@@ -1,0 +1,19 @@
+.genres__selector {
+    background-color: #614ccb;
+    width: 30%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 15px;
+  }
+  
+  .genres__selector svg{
+    color: #ffff00;
+  }
+
+  .genres__container{
+    margin: auto;
+  }

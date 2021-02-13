@@ -1,0 +1,16 @@
+.right{
+    width: 20%;
+  }
+  
+.right{
+    background-color: #0b071f;
+}
+
+.right h1 {
+  color: whitesmoke;
+  display: flex;
+  width: max-content;
+  margin: auto;
+  font-size:150%;
+  margin-top: 20px;
+}

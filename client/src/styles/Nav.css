@@ -1,0 +1,118 @@
+.nav{
+  display: flex;
+  border-bottom: 1px solid #080708;
+  height: 80px;
+  background-color: #070617;
+  color: white;
+}
+
+
+
+
+.nav__container,.nav__logo {
+  color:#6B0504;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.nav__logo{
+  cursor: pointer;
+}
+
+.nav__logo span{
+  margin-right: 10px;
+  width: 40px;
+  height: auto;
+  animation: goLeft .5s ease-in;
+  font-size: 20px;
+}
+
+.nav button{
+  background-color: #614ccb1a;
+}
+
+.nav button span{
+  padding:0px;
+  width:30px
+}
+
+.nav__container button{
+  padding:10px;
+  background-color: #614ccb1a;
+  border:none;
+  color:white;
+  cursor:pointer;
+  border-radius:2px;
+  transition:background-color .4s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.nav__container button:hover{
+  background-color:#614ccb42
+}
+
+.nav__account{
+ margin-left: auto;
+ 
+}
+
+.nav__watchlist button{
+  background-color: #ffff00;
+  color:black;
+  position: relative;
+  padding: 0px 10px;
+}
+
+.nav__watchlist button:hover{
+  background-color: #ffff00;
+}
+
+.nav__watchlist span:first-child{
+  margin-top:17px;
+  font-size: 12px;
+}
+
+.nav__watchlist span:last-child{
+    position:absolute;
+    font-size: 12px;
+    top: 4px;
+}
+
+@keyframes goLeft {
+  from{transform: translateX(-100px);}
+  to{transform: translateX(0px);}
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+ .nav h2{
+   font-size: 12px;
+ }
+ .nav button{
+   font-size: 10px;
+   display:flex;
+   align-items:center;
+ }
+
+ .nav button span{
+   font-size: 10px;
+   padding:0px;
+   width:20px
+ }
+ .nav__logo span{
+   margin:0px;
+   padding:0px;
+   width:20px;
+   font-size: 12px;
+ }
+}

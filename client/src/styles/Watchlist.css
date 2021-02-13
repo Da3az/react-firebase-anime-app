@@ -1,0 +1,92 @@
+.watchlist{
+    background: url('../images/background.png');
+    background-attachment: fixed;
+    padding-bottom: 10px;
+}
+
+.watchlist a {
+    color:#5d5d88
+}
+
+.watchlist__anime{
+    display:flex;
+    margin-bottom: 20px;
+    margin:auto;
+    margin-top: 20px;
+    background-color: white;
+    width:80%;
+    box-shadow: 0px 0px 15px 8px #888;
+    background-color: #151321;
+    color:white;
+    position: relative;
+}
+
+.watchlist__anime > div{
+    padding:10px
+}
+
+.watchlist__left{
+    width:400px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.watchlist__right{
+    width:calc(100vw - 400px);
+    padding-top:50px !important;
+}
+
+.watchlist__anime__title{
+    font-size: 30px;
+    padding:30px;
+}
+
+.watchlist__anime__image img{
+    border:2px solid #312a57;
+}
+
+.watchlist__remove{
+    position: absolute;
+    top:0px;
+    right:10px;
+    cursor:pointer;
+}
+
+.watchlist__remove button{
+    display: flex;
+    align-items: center;
+    background-color:#e21f29;
+    border:none;
+    height:30px;
+    padding-right: 5px;
+    width:30px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width .5s ease-in;
+    cursor: pointer;
+}
+
+.watchlist__remove button:hover{
+    width:200px
+}
+
+.watchlist__remove button svg{
+    margin-right: 5px;
+    height:30px;
+    width:30px;
+    
+}
+
+@media only screen and (max-width: 900px){
+    .watchlist__anime{
+        flex-direction: column;
+    }
+
+    .watchlist__anime > div{
+        width:auto;
+        font-size:3vw
+    }
+}

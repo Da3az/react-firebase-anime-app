@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+}
+
+.app {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+
+
+.app__body{
+  display: flex;
+  width: 100%;
+}
+
+.animeCard{
+  position:relative;
+  margin:5px
+}
+
+.anime_add{
+  position: absolute;
+  right:0px;
+  top:0px;
+  width: 30px;
+  height: 30px;
+  transition: width .5s ease-in ;
+  display:flex;
+  cursor:pointer;
+  overflow: hidden;
+  align-items: center;
+  white-space: nowrap;
+  background-color: #ffff00;
+  border: none;
+}
+
+.anime_add:hover{
+  width:150px;
+}
+
+.anime_add svg{
+  margin-right: 5px !important;
+  height: 30px;
+  width: 30px;
+}
+
+
+
+
+@media only screen and (max-width: 1100px){
+  .app__body{
+    flex-direction: column-reverse;
+  }  
+  .app__body > div{
+    width:auto;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .app__body{
+    flex-direction: column-reverse;
+  }  
+  .app__body > div{
+    width:auto;
+  }
+}

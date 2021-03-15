@@ -16,7 +16,7 @@ Live demo on https://react-anime-app.herokuapp.com/
 * React
 * Redux
 * Material-UI
-* Axios
+
 ### Backend and Databse:
 
 * Node/Express

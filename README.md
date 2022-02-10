@@ -34,6 +34,7 @@ Live demo on https://react-anime-app.herokuapp.com/
 ### Steps:
 1. Clone repo on your local machine:
 ```
+$ git clone https://github.com/Da3az/react-firebase-anime-app.git
 ```
 2. Install server-side dependencies:
 ```
